@@ -31,7 +31,7 @@ module ALU (
             fls.carry = temp[16];
             result = temp[15:0];
         end
-        else if(op == NOT) begin
+        else if(op == NOT1) begin
             result = ~op1;
         end
         else begin

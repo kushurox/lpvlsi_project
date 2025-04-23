@@ -24,7 +24,7 @@ module ClockGater (
                 oclk <= ~oclk;
                 cnt <= 0;
             end
-            else if(p==SHUTDOWN) oclk <= clk;
+            else if(p==SHUTDOWN) oclk <= 0;
             else cnt <= cnt + 1;
         end
     end
